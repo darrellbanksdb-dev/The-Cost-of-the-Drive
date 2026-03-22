@@ -1,0 +1,8 @@
+ggplot(subset(auto_market, !is.na(new_auto_48mo_rate)),
+       aes(x = date_id, y = new_auto_48mo_rate)) +
+  geom_line() +
+  labs(
+    title = "Auto Loan Interest Rates Over Time",
+    x = "Year",
+    y = "Interest Rate (%)"
+  )
