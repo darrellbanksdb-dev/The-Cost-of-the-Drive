@@ -1,0 +1,8 @@
+ggplot(auto_market, aes(x = new_vehicle_cpi, y = total_vehicle_sales_saar)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(
+    title = "Vehicle Prices vs Sales Volume",
+    x = "Vehicle Price Index",
+    y = "Sales (SAAR)"
+  )
