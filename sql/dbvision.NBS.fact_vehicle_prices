@@ -1,0 +1,5 @@
+CREATE OR REPLACE TABLE dbvision.NBS.fact_vehicle_prices AS
+SELECT
+    observation_date AS price_date,
+    CUSR0000SETA01 AS new_vehicle_cpi
+FROM dbvision.NBS.raw_new_vehicle_cpi;
