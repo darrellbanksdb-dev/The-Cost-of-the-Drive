@@ -1,0 +1,7 @@
+ggplot(auto_market, aes(x = date_id, y = total_vehicle_sales_saar)) +
+  geom_line() +
+  labs(
+    title = "U.S. Vehicle Sales Over Time",
+    x = "Year",
+    y = "Sales (SAAR)"
+  )
