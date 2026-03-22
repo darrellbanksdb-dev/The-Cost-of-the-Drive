@@ -1,0 +1,8 @@
+CREATE OR REPLACE TABLE dbvision.NBS.fact_vehicle_sales AS
+SELECT
+    t.observation_date AS sales_date,
+    t.TOTALSA AS total_vehicle_sales_saar,
+    a.ALTSALES AS light_vehicle_sales_saar
+FROM dbvision.NBS.raw_totalsa t
+LEFT JOIN dbvision.NBS.raw_altsales a
+    ON t.observation_date = a.observation_date;
