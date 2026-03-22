@@ -1,0 +1,4 @@
+SELECT
+  *
+FROM
+  `dbvision.NBS.dim_date`;
