@@ -1,3 +1,0 @@
-SELECT *
-FROM dbvision.NBS.stg_altsales
-LIMIT 10;
