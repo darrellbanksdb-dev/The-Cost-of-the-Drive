@@ -1,0 +1,4 @@
+CREATE TABLE dbvision.NBS.stg_totalsa (
+    date_id DATE,
+    total_vehicle_sales_saar FLOAT64
+);
