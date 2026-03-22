@@ -1,0 +1,4 @@
+SELECT
+  *
+FROM
+  `dbvision.NBS.fact_auto_finance`;
