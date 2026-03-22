@@ -1,0 +1,4 @@
+SELECT *
+FROM dbvision.NBS.fact_household_income
+ORDER BY income_year
+LIMIT 10;
