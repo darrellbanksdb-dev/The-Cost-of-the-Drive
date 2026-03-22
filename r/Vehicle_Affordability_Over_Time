@@ -1,0 +1,15 @@
+affordability_plot_data <- subset(
+  auto_market,
+  !is.na(new_vehicle_cpi) & !is.na(median_household_income)
+)
+
+affordability_plot_data$affordability <-
+  affordability_plot_data$new_vehicle_cpi / affordability_plot_data$median_household_income
+
+ggplot(affordability_plot_data, aes(x = date_id, y = affordability)) +
+  geom_line() +
+  labs(
+    title = "Vehicle Affordability Over Time",
+    x = "Year",
+    y = "Price-to-Income Ratio"
+  )
