@@ -1,0 +1,7 @@
+ggplot(auto_market, aes(x = date_id, y = new_vehicle_cpi)) +
+  geom_line() +
+  labs(
+    title = "New Vehicle Price Index Over Time",
+    x = "Year",
+    y = "CPI Index"
+  )
