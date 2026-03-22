@@ -1,0 +1,25 @@
+CREATE OR REPLACE VIEW dbvision.NBS.vw_auto_market_analysis AS
+SELECT
+    d.date_id,
+    d.year_num,
+    d.month_num,
+    d.month_name,
+    d.quarter_num,
+    s.total_vehicle_sales_saar,
+    s.light_vehicle_sales_saar,
+    p.new_vehicle_cpi,
+    f.new_auto_48mo_rate,
+    r.new_car_dealer_sales_millions,
+    i.median_household_income
+FROM dbvision.NBS.dim_date d
+LEFT JOIN dbvision.NBS.fact_vehicle_sales s
+    ON d.date_id = s.sales_date
+LEFT JOIN dbvision.NBS.fact_vehicle_prices p
+    ON d.date_id = p.price_date
+LEFT JOIN dbvision.NBS.fact_auto_finance f
+    ON d.date_id = f.finance_date
+LEFT JOIN dbvision.NBS.fact_dealer_revenue r
+    ON d.date_id = r.revenue_date
+LEFT JOIN dbvision.NBS.fact_household_income i
+    ON d.year_num = i.income_year
+ORDER BY d.date_id;
