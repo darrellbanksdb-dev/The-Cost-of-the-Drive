@@ -71,23 +71,23 @@ This analysis evaluates whether higher prices and rising financing costs are ass
 
 ### 1. Vehicle Sales Trend
 
-![Vehicle Sales](outputs/vehicle_sales_trend.png)
+![Vehicle Sales](outputs/U.S Vehicle Sales Over Time.png)
 
 ### 2. Vehicle Price Trend
 
-![Vehicle Prices](outputs/vehicle_price_trend.png)
+![Vehicle Prices](outputs/New Vehicle Price Index Over Time.png)
 
 ### 3. Price vs Sales Relationship
 
-![Price vs Sales](outputs/price_vs_sales.png)
+![Price vs Sales](outputs/Vehicle Prices vs Sales Volume.png)
 
 ### 4. Auto Loan Interest Rates
 
-![Interest Rates](outputs/auto_loan_rates.png)
+![Interest Rates](outputs/Auto Loan Interest Rates Over Time.png)
 
 ### 5. Vehicle Affordability
 
-![Affordability](outputs/vehicle_affordability.png)
+![Affordability](outputs/Vehicle Affordability Over Time.png)
 
 ---
 
